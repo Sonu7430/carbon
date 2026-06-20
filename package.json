@@ -1,0 +1,15 @@
+{
+  "name": "ecotrack-workspace",
+  "version": "1.0.0",
+  "description": "EcoTrack Carbon Footprint Tracker Workspace",
+  "type": "module",
+  "scripts": {
+    "setup": "npm install --prefix backend && npm install --prefix frontend --legacy-peer-deps",
+    "test:backend": "npm run test --prefix backend",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}
